@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Minds Center — IGCSE · IB · EST · AP | Amman, Jordan</title>
+  <meta name="description" content="Master Minds Center — Amman's premier educational center for international & national streams: IGCSE, Edexcel IAL, IB, EST & AP. Where A* minds are built." />
+  <meta name="theme-color" content="#07090f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23e8b23c'/><text x='32' y='42' font-family='Arial' font-size='26' font-weight='bold' text-anchor='middle' fill='%23141005'>MM</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/Css/style.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__center">
+      <div class="preloader__logo">
+        <span class="preloader__mask"><span class="preloader__logo-word">MASTER</span></span>
+        <span class="preloader__mask"><span class="preloader__logo-word preloader__logo-word--outline">MINDS</span></span>
+      </div>
+      <div class="preloader__bar"><span class="preloader__bar-fill"></span></div>
+    </div>
+    <div class="preloader__meta">
+      <span>Amman — Jordan</span>
+      <span class="preloader__counter">0%</span>
+    </div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NOISE TEXTURE ============ -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#home" aria-label="Master Minds Center — home">
+        <span class="nav__mark">MM</span>
+        <span class="nav__name">Master Minds <em>Center · Amman</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Inside MMC</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--gold btn--sm nav__wa" data-magnetic href="https://wa.me/962789833333?text=Hello%20Master%20Minds%20Center!%20I%27d%20like%20to%20know%20more%20about%20your%20programs." target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="menu__inner container">
+      <nav class="menu__links">
+        <a class="menu__link" href="#home"><span>Home</span><em>01</em></a>
+        <a class="menu__link" href="#about"><span>About</span><em>02</em></a>
+        <a class="menu__link" href="#programs"><span>Programs</span><em>03</em></a>
+        <a class="menu__link" href="#results"><span>Results</span><em>04</em></a>
+        <a class="menu__link" href="#gallery"><span>Inside MMC</span><em>05</em></a>
+        <a class="menu__link" href="#contact"><span>Contact</span><em>06</em></a>
+      </nav>
+      <div class="menu__foot">
+        <a class="btn btn--gold" href="https://wa.me/962789833333" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/mastermindscenter/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <span class="menu__ar" dir="rtl">عقولٌ تتألّق ✦</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          Master Minds Center · Amman — Jordan
+          <span class="hero__eyebrow-ar" dir="rtl">عقولٌ تتألّق نحو المستقبل</span>
+        </p>
+        <h1 class="hero__title">
+          <span class="mask"><span class="line">MASTER</span></span>
+          <span class="mask"><span class="line line--outline">MINDS<em class="line__dot">.</em></span></span>
+        </h1>
+        <p class="hero__sub">
+          Jordan's premier educational center for international &amp; national streams —
+          <strong>IGCSE</strong>, <strong>Edexcel IAL</strong>, <strong>IB</strong>, <strong>EST</strong> &amp; <strong>AP</strong>.
+          Where A* minds are built.
+        </p>
+        <div class="hero__ctas">
+          <a class="btn btn--gold" data-magnetic href="https://wa.me/962789833333?text=Hello%20Master%20Minds%20Center!%20I%27d%20like%20to%20book%20a%20free%20trial%20lesson." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Book a Free Trial Lesson
+          </a>
+          <a class="btn btn--ghost" data-magnetic href="#programs">Explore Programs <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="6500" data-suffix="+">0</span>
+            <span class="hero__stat-label">Community &amp; Students</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="5">0</span>
+            <span class="hero__stat-label">Global Programs</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="20" data-suffix="+">0</span>
+            <span class="hero__stat-label">Years of Teaching Mastery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__side" aria-hidden="true">
+        <span>IGCSE</span><i></i><span>IB</span><i></i><span>EST</span><i></i><span>AP</span><i></i><span>EDEXCEL</span>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-track"><span class="hero__scroll-dot"></span></span>
+        <span class="hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ EXAMS MARQUEE ============ -->
+    <div class="marquee marquee--exams" data-marquee="left" data-speed="0.7" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__unit">
+          <span class="f">IGCSE</span><i>✦</i>
+          <span>EDEXCEL IAL</span><i>✦</i>
+          <span class="f">IB DIPLOMA</span><i>✦</i>
+          <span>EST</span><i>✦</i>
+          <span class="f">AP</span><i>✦</i>
+          <span>NATIONAL STREAMS</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__left">
+          <span class="sec-tag reveal"><i></i>01 · Who We Are</span>
+          <h2 class="sec-title" data-split>Where bright minds become <em>master minds</em></h2>
+          <p class="about__p reveal">
+            Master Minds Center is an educational powerhouse in the heart of Amman — guiding students through
+            both international programs (<strong>IGCSE, IB, EST, AP</strong>) and national streams.
+          </p>
+          <p class="about__p reveal">
+            Every detail of the journey toward A* is engineered: customized notes, relentless past-paper practice,
+            and full mock exams under real conditions — in person or online.
+          </p>
+          <ul class="about__features" data-stagger>
+            <li><i class="fa-solid fa-user-graduate"></i><div><strong>Expert &amp; Qualified Tutors</strong><span>Specialists in every syllabus</span></div></li>
+            <li><i class="fa-solid fa-book-open"></i><div><strong>Customized Notes</strong><span>Tailored to each exam board</span></div></li>
+            <li><i class="fa-solid fa-file-pen"></i><div><strong>Past-Paper Mastery</strong><span>Solving real exam papers</span></div></li>
+            <li><i class="fa-solid fa-clipboard-check"></i><div><strong>Mock Exams</strong><span>Full IGCSE &amp; AP simulations</span></div></li>
+          </ul>
+          <div class="about__ctas reveal">
+            <a class="btn btn--gold" data-magnetic href="https://www.instagram.com/mastermindscenter/" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i> Follow @mastermindscenter
+            </a>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <div class="about__ring" aria-hidden="true"></div>
+          <div class="about__card about__card--main" data-parallax="30">
+            <span class="about__grade">A*</span>
+            <p>Where A* is not a goal — it's the standard.</p>
+          </div>
+          <div class="about__card about__card--ar" data-parallax="60"><span dir="rtl">عقولٌ تتألّق</span></div>
+          <div class="about__chip about__chip--1" data-parallax="90"><i class="fa-solid fa-gift"></i> Free Trial Lessons</div>
+          <div class="about__chip about__chip--2" data-parallax="120"><i class="fa-solid fa-stopwatch"></i> Mock Exams — Every Season</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMS ============ -->
+    <section class="programs section" id="programs">
+      <div class="container">
+        <span class="sec-tag reveal"><i></i>02 · Programs</span>
+        <h2 class="sec-title" data-split>Every syllabus. <em>One center.</em></h2>
+        <p class="sec-sub reveal">Five internationally recognized programs — taught by specialists, engineered for top grades.</p>
+
+        <div class="programs__grid" data-stagger>
+          <!-- IGCSE -->
+          <article class="program-card" data-tilt>
+            <div class="tilt-glare"></div>
+            <span class="program-card__num">01</span>
+            <span class="program-card__tag">Cambridge</span>
+            <h3 class="program-card__name">IGCSE</h3>
+            <p class="program-card__level">O Level · Grades 9 &amp; 10</p>
+            <p class="program-card__desc">The world's most recognized qualification — built on deep understanding and sharp exam technique.</p>
+            <div class="chips"><span>Math 0580</span><span>Biology 0610</span><span>Chemistry 0620</span><span>Physics 0625</span><span>Arabic 7180</span><span>ICT 0417</span></div>
+            <a class="program-card__link" href="https://wa.me/962789833333?text=I%27m%20interested%20in%20the%20IGCSE%20program." target="_blank" rel="noopener">Ask on WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Edexcel -->
+          <article class="program-card" data-tilt>
+            <div class="tilt-glare"></div>
+            <span class="program-card__num">02</span>
+            <span class="program-card__tag">Pearson Edexcel</span>
+            <h3 class="program-card__name">IAL</h3>
+            <p class="program-card__level">AS &amp; A Levels · Grades 11 &amp; 12</p>
+            <p class="program-card__desc">International Advanced Levels with unit-by-unit mastery and intensive past-paper drilling.</p>
+            <div class="chips"><span>Math P1–M1</span><span>Biology U1 · U4</span><span>Chemistry U1 · U4</span><span>Physics U1 · U4</span></div>
+            <a class="program-card__link" href="https://wa.me/962789833333?text=I%27m%20interested%20in%20the%20Edexcel%20IAL%20program." target="_blank" rel="noopener">Ask on WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- IB -->
+          <article class="program-card" data-tilt>
+            <div class="tilt-glare"></div>
+            <span class="program-card__num">03</span>
+            <span class="program-card__tag">IB World</span>
+            <h3 class="program-card__name">IB</h3>
+            <p class="program-card__level">Diploma Programme · HL &amp; SL</p>
+            <p class="program-card__desc">Full Diploma support — HL &amp; SL subjects, Internal Assessments and exam strategy.</p>
+            <div class="chips"><span>HL Subjects</span><span>SL Subjects</span><span>IA Guidance</span></div>
+            <a class="program-card__link" href="https://wa.me/962789833333?text=I%27m%20interested%20in%20the%20IB%20program." target="_blank" rel="noopener">Ask on WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- EST -->
+          <article class="program-card" data-tilt>
+            <div class="tilt-glare"></div>
+            <span class="program-card__num">04</span>
+            <span class="program-card__tag">EST Prep</span>
+            <h3 class="program-card__name">EST</h3>
+            <p class="program-card__level">Egyptian Scholastic Test</p>
+            <p class="program-card__desc">Targeted EST training to push your score toward the top of the 200–800 range.</p>
+            <div class="chips"><span>Biology</span><span>Chemistry</span><span>Math 1 · Math 2</span><span>Physics</span><span>Literature</span><span>Economics</span></div>
+            <a class="program-card__link" href="https://wa.me/962789833333?text=I%27m%20interested%20in%20the%20EST%20program." target="_blank" rel="noopener">Ask on WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- AP -->
+          <article class="program-card" data-tilt>
+            <div class="tilt-glare"></div>
+            <span class="program-card__num">05</span>
+            <span class="program-card__tag">College Board</span>
+            <h3 class="program-card__name">AP</h3>
+            <p class="program-card__level">Advanced Placement</p>
+            <p class="program-card__desc">Aim for the perfect 5 — with tutors who live and breathe College Board exams.</p>
+            <div class="chips"><span>Biology</span><span>Calculus</span><span>Chemistry</span><span>Psychology</span><span>Computer Science</span><span>Human Geography</span></div>
+            <a class="program-card__link" href="https://wa.me/962789833333?text=I%27m%20interested%20in%20the%20AP%20program." target="_blank" rel="noopener">Ask on WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- CTA tile -->
+          <article class="program-card program-card--cta" data-tilt>
+            <div class="tilt-glare"></div>
+            <span class="program-card__tag">Free Guidance</span>
+            <h3>Not sure which program fits you?</h3>
+            <p class="program-card__desc">Message us on WhatsApp — our academic team will map the perfect path for your goals.</p>
+            <a class="btn btn--gold" href="https://wa.me/962789833333" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Talk to Us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESULTS ============ -->
+    <section class="results section" id="results">
+      <div class="container">
+        <span class="sec-tag reveal"><i></i>03 · Results</span>
+        <h2 class="sec-title" data-split>Proof, <em>not promises.</em></h2>
+        <p class="sec-sub reveal">Straight from our students' official results — a wall of A* and perfect scores.</p>
+
+        <div class="results__stats" data-stagger>
+          <div class="result-stat"><span class="result-stat__num" data-count="6500" data-suffix="+">0</span><span class="result-stat__label">Students &amp; Community</span></div>
+          <div class="result-stat"><span class="result-stat__num" data-count="475" data-suffix="+">0</span><span class="result-stat__label">Result Celebrations</span></div>
+          <div class="result-stat"><span class="result-stat__num" data-count="100" data-suffix="/100">0</span><span class="result-stat__label">Perfect Scores</span></div>
+          <div class="result-stat"><span class="result-stat__num" data-count="5">0</span><span class="result-stat__label">International Programs</span></div>
+        </div>
+      </div>
+
+      <div class="results-wall" data-marquee="left" data-speed="0.5" data-pause>
+        <div class="marquee__track">
+          <div class="marquee__unit">
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">A*</span><span class="result-card__score">100/100</span></div>
+              <h4>Joudi Musmar</h4><p>Cambridge IGCSE · Chemistry 0620</p>
+            </article>
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">A*</span><span class="result-card__score">100/100</span></div>
+              <h4>Joud Al Issa</h4><p>Edexcel IAL · Math P4</p>
+            </article>
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">A*</span><span class="result-card__score">100/100</span></div>
+              <h4>Loran Khalifeh</h4><p>Cambridge IGCSE · Math 0580</p>
+            </article>
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">5</span><span class="result-card__score">5/5</span></div>
+              <h4>Dana Abu Zahra</h4><p>AP · Calculus</p>
+            </article>
+          </div>
+          <div class="marquee__unit">
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">5</span><span class="result-card__score">5/5</span></div>
+              <h4>Elyna Alotailwi</h4><p>AP · Psychology</p>
+            </article>
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">5</span><span class="result-card__score">5/5</span></div>
+              <h4>Bander Tarhouni</h4><p>AP · Computer Science</p>
+            </article>
+            <article class="result-card result-card--alt">
+              <div class="result-card__top"><span class="result-card__grade">A</span><span class="result-card__score">Grade A</span></div>
+              <h4>Karam Aljararaa</h4><p>Edexcel IAL · Math P1</p>
+            </article>
+            <article class="result-card">
+              <div class="result-card__top"><span class="result-card__grade">5</span><span class="result-card__score">5/5</span></div>
+              <h4>Shaadeh Khasawneh</h4><p>AP · Biology</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ METHOD ============ -->
+    <section class="method section" id="method">
+      <div class="container">
+        <span class="sec-tag reveal"><i></i>04 · The Method</span>
+        <h2 class="sec-title" data-split>How we build <em>A* minds.</em></h2>
+
+        <ul class="method__list" data-stagger>
+          <li class="method-row">
+            <span class="method-row__num">01</span>
+            <h3>Customized Notes</h3>
+            <p>Handcrafted study material tailored to every syllabus, every paper, every student.</p>
+            <i class="fa-solid fa-book-open"></i>
+          </li>
+          <li class="method-row">
+            <span class="method-row__num">02</span>
+            <h3>Past-Paper Mastery</h3>
+            <p>We solve, drill and dissect real exam papers until the patterns become instinct.</p>
+            <i class="fa-solid fa-file-pen"></i>
+          </li>
+          <li class="method-row">
+            <span class="method-row__num">03</span>
+            <h3>Mock Exams</h3>
+            <p>Full IGCSE &amp; AP mock sessions under real exam conditions — scheduled every season.</p>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </li>
+          <li class="method-row">
+            <span class="method-row__num">04</span>
+            <h3>Free Trial Lessons</h3>
+            <p>Experience any subject with our top tutors before you enroll. Zero risk, all gain.</p>
+            <i class="fa-solid fa-gift"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ VIDEOS ============ -->
+    <section class="videos section" id="gallery">
+      <div class="container">
+        <span class="sec-tag reveal"><i></i>05 · Inside MMC</span>
+        <h2 class="sec-title" data-split>Feel the <em>energy.</em></h2>
+        <p class="sec-sub reveal">Step inside the center — real classes, real students, real moments.</p>
+      </div>
+
+      <div class="container videos-grid" data-stagger>
+        <article class="video-card video-card--lg">
+          <div class="video-card__media">
+            <video src="/Videos/1.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="video-card__shade"></div>
+            <button class="video-card__play" aria-label="Play video"><i class="fa-solid fa-play"></i><i class="fa-solid fa-pause"></i></button>
+            <span class="video-card__index">01</span>
+            <div class="video-card__meta"><h3>The MMC Experience</h3><p>Classes · Mentors · Momentum</p></div>
+            <button class="video-card__mute" aria-label="Toggle sound"><i class="fa-solid fa-volume-xmark"></i></button>
+            <div class="video-card__progress"><span></span></div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-card__media">
+            <video src="/Videos/2.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="video-card__shade"></div>
+            <button class="video-card__play" aria-label="Play video"><i class="fa-solid fa-play"></i><i class="fa-solid fa-pause"></i></button>
+            <span class="video-card__index">02</span>
+            <div class="video-card__meta"><h3>Life at Master Minds</h3><p>Focus · Friendship · Future</p></div>
+            <button class="video-card__mute" aria-label="Toggle sound"><i class="fa-solid fa-volume-xmark"></i></button>
+            <div class="video-card__progress"><span></span></div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-card__media">
+            <video src="/Videos/3.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="video-card__shade"></div>
+            <button class="video-card__play" aria-label="Play video"><i class="fa-solid fa-play"></i><i class="fa-solid fa-pause"></i></button>
+            <span class="video-card__index">03</span>
+            <div class="video-card__meta"><h3>Toward the Top</h3><p>Mocks · Milestones · Medals</p></div>
+            <button class="video-card__mute" aria-label="Toggle sound"><i class="fa-solid fa-volume-xmark"></i></button>
+            <div class="video-card__progress"><span></span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-split>Your first lesson is <em>on us.</em></h2>
+        <p class="cta__sub reveal">Free trial lessons across IGCSE · Edexcel IAL · IB · EST · AP — in person in Amman, or online from anywhere.</p>
+        <div class="cta__actions reveal">
+          <a class="btn btn--gold btn--lg" data-magnetic href="https://wa.me/962789833333?text=Hello!%20I%27d%20like%20to%20book%20a%20FREE%20trial%20lesson." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Book via WhatsApp</a>
+          <a class="btn btn--ghost btn--lg" data-magnetic href="tel:+962789833333"><i class="fa-solid fa-phone"></i> +962 7898 33333</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <span class="sec-tag reveal"><i></i>06 · Contact</span>
+        <h2 class="sec-title" data-split>Begin your <em>journey.</em></h2>
+        <p class="sec-sub reveal">Visit the center, call us, or send a WhatsApp message — we reply fast.</p>
+
+        <div class="contact__grid" data-stagger>
+          <a class="contact-card contact-card--wa" href="https://wa.me/962789833333?text=Hello%20Master%20Minds%20Center!" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div><strong>WhatsApp Us</strong><span>+962 7898 33333</span></div>
+            <i class="fa-solid fa-arrow-right contact-card__arrow"></i>
+          </a>
+          <a class="contact-card" href="tel:+962785000000">
+            <i class="fa-solid fa-phone"></i>
+            <div><strong>Call Us</strong><span>+962 7850 00000</span></div>
+            <i class="fa-solid fa-arrow-right contact-card__arrow"></i>
+          </a>
+          <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=Master+Minds+Center+Mecca+Al+Mukarramah+St+Amman+Jordan" target="_blank" rel="noopener">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><strong>Visit Us</strong><span>Al Sabelah Complex No 250 · Mecca St., Amman</span></div>
+            <i class="fa-solid fa-arrow-right contact-card__arrow"></i>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/mastermindscenter/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+            <div><strong>Instagram</strong><span>@mastermindscenter</span></div>
+            <i class="fa-solid fa-arrow-right contact-card__arrow"></i>
+          </a>
+        </div>
+
+        <div class="contact__info reveal">
+          <span><i class="fa-solid fa-location-dot"></i> Mecca Al Mukarramah St, Al Sabelah Complex No 250, First Floor — Amman, Jordan</span>
+          <span><i class="fa-solid fa-envelope-open-text"></i> P.O. Box 1898, Amman 11821</span>
+          <span><i class="fa-solid fa-globe"></i> <a href="https://www.mmc.jo" target="_blank" rel="noopener">www.mmc.jo</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__giant reveal" aria-hidden="true"><span>MASTER</span><span class="fill">MINDS</span><em>✦</em></div>
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="nav__logo" href="#home" aria-label="Master Minds Center">
+            <span class="nav__mark">MM</span>
+            <span class="nav__name">Master Minds <em>Center · Amman</em></span>
+          </a>
+          <p>Educational excellence for international &amp; national streams — engineered in Amman, Jordan.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/mastermindscenter/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/962789833333" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.mmc.jo" target="_blank" rel="noopener" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#results">Results</a>
+          <a href="#gallery">Inside MMC</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h5>Programs</h5>
+          <a href="#programs">IGCSE</a>
+          <a href="#programs">Edexcel IAL</a>
+          <a href="#programs">IB Diploma</a>
+          <a href="#programs">EST</a>
+          <a href="#programs">AP</a>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <a href="https://wa.me/962789833333" target="_blank" rel="noopener">+962 7898 33333</a>
+          <a href="tel:+962785000000">+962 7850 00000</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Master+Minds+Center+Amman+Jordan" target="_blank" rel="noopener">Al Sabelah Complex No 250, Amman</a>
+          <a href="https://www.instagram.com/mastermindscenter/" target="_blank" rel="noopener">@mastermindscenter</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span class="year">2025</span> Master Minds Center — Amman, Jordan. All rights reserved.</p>
+        <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOAT ============ -->
+  <a class="wa-float" href="https://wa.me/962789833333?text=Hello%20Master%20Minds%20Center%2C%20I%27d%20like%20to%20book%20a%20free%20trial%20lesson." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <span class="wa-float__ring"></span>
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-float__tip">Chat with us</span>
+  </a>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="/Js/script.js"></script>
+</body>
+</html>
